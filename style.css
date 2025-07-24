@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* === GENERAL UTILITIES === */
+.pageNo {
+  position: absolute;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+#verticle-line {
+  font-size: 30px;
+}
+.active-page {
+  color: gray;
+}
+
+/* === HEADER SECTION === */
+header {
+  min-height: 750px;
+  width: 100%;
+  background: url("https://crustac.fr/wp-content/themes/crustac/img/home_intro_bg.jpg.webp")
+    center/cover no-repeat;
+  padding: 40px;
+}
+
+#fr {
+  color: grey;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+nav .menuBar img {
+  width: 50px;
+}
+
+header .content-section {
+  width: 100%;
+  height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-section h2 {
+  font-size: 33rem;
+}
+
+.video-section .scroll {
+  font-size: 15px;
+}
+
+/* === SECTION: CORPORATE === */
+.corporate {
+  padding: 40px;
+  min-height: 750px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2-content {
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section2-content .corporate-identity {
+  width: 340px;
+}
+.section2-content .vector svg {
+  width: 200px;
+}
+.circle {
+  position: absolute;
+  z-index: -1;
+}
+.circle img {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+}
+.corporate-identity h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #023646;
+}
+.corporate-identity h2 {
+  margin-top: 10px;
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #023646;
+}
+.corporate-identity p {
+  margin-top: 20px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #023646;
+}
+.btns {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: white;
+  color: rgb(76, 76, 76);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.next {
+  text-align: center;
+  padding: 30px 0px;
+}
+/* Expertise section ------------------------------------------------------------------------- */
+.Expertise {
+  height: 765px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.ExpertiseContent {
+  padding: 30px 0px;
+  display: flex;
+  min-height: 700px;
+  width: 100%;
+  align-items: center;
+}
+.expertise-video {
+  height: 100%;
+  width: 50%;
+  background-image: url("https://crustac.fr/wp-content/themes/crustac/img/home_how_bg.jpg.webp");
+  background-size: cover;
+  background-position: center;
+}
+.expertise-content {
+  padding: 130px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+.expertise-content h4 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #023646;
+}
+.expertise-content h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 10px;
+  font-size: 35px;
+  color: #023646;
+}
+.expertise-content p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 25px;
+  letter-spacing: 2px;
+}
+.expertise-content button {
+  margin-top: 40px;
+  width: fit-content;
+}
+.expertise2-video {
+  height: 100%;
+  width: 50%;
+  background-image: url("	https://crustac.fr/wp-content/themes/crustac/img/home_sites_bg.jpg.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Product section -------------------------------------------- */
+.product-ranges {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #023646;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.productContent {
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ourProductheading {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.ourProductheading h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 500;
+}
+.ourProductheading h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+  color: white;
+}
+.productBoxs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 400px;
+  width: 100%;
+}
+.productBoxs .productBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.productBox img {
+  width: 17vw;
+}
+.productBox button {
+  padding: 8px 40px;
+  border: none;
+  color: white;
+}
+.productBox .btn1 {
+  background-color: rgb(168, 139, 57);
+}
+.productBox .btn2 {
+  background-color: orangered;
+}
+.productBox .btn3 {
+  background-color: rgb(234, 69, 69);
+}
+.productBtn {
+  margin-top: 20px;
+}
+.productBtn button {
+  padding: 15px 40px;
+  border-radius: 25px;
+  border: 2px solid orangered;
+  background-color: transparent;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.product-ranges .next {
+  width: 100%;
+  color: white;
+  height: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* news  */
+.news {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.newsContent {
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ournewsheading {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 100px;
+}
+
+.ournewsheading h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #023646;
+  font-weight: 500;
+}
+.ournewsheading h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+  color: #023646;
+}
+.swiper {
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+}
+.slider-text {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  color: white;
+}
+
+.slider-text h2,
+.slider-text p,
+.slider-text button {
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+.slider-text button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+.swiper-slide:hover {
+  transform: translateY(-10px);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .layer1 {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+}
+.contact .layer2 {
+  width: 100%;
+  height: 50%;
+  background-color: #c3dde4;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .next {
+    display: none;
+  }
+  .section2-content {
+    flex-direction: column;
+  }
+  .circle {
+    position: relative;
+  }
+  .circle img {
+    width: 280px;
+    height: 280px;
+  }
+  .section2-content {
+    width: 90%;
+    height: 600px;
+  }
+  .section2-content .corporate-identity {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .section2-content .vector svg {
+    width: 150px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+  }
+  .corporate-identity h2 {
+    font-size: 30px;
+  }
+  .corporate-identity p {
+    font-size: 14px;
+  }
+
+  .ExpertiseContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .expertise-video {
+    min-height: 300px;
+    width: 50vw;
+    background-image: url("https://crustac.fr/wp-content/themes/crustac/img/home_how_bg.jpg.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .expertise-content {
+    padding: 55px;
+    width: 100%;
+  }
+  .expertise-content h4 {
+    font-weight: 200;
+  }
+  .expertise-content h2 {
+    font-size: 30px;
+  }
+  .expertise-content p {
+    font-size: 14px;
+  }
+  #expertise2 {
+    align-items: flex-end;
+  }
+  .expertise2-video {
+    height: 100%;
+    width: 50%;
+    background-image: url("	https://crustac.fr/wp-content/themes/crustac/img/home_sites_bg.jpg.webp");
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-slide {
+    height: auto;
+  }
+}
