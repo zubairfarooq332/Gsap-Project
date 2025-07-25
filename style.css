@@ -25,55 +25,84 @@ body {
 
 /* === HEADER SECTION === */
 header {
-  min-height: 750px;
-  width: 100%;
-  background: url("https://crustac.fr/wp-content/themes/crustac/img/home_intro_bg.jpg.webp")
-    center/cover no-repeat;
-  padding: 40px;
-}
-
-#fr {
-  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(https://design2seo.com/assets/blog/svg-clipping/home_intro_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-nav .logo img {
-  width: 100px;
+  align-items: center;
+  padding: 40px;
+  z-index: 2;
+  width: 100%;
+  position: relative;
 }
 
 nav .menuBar img {
-  width: 50px;
+  width: 40px;
 }
 
-header .content-section {
-  width: 100%;
-  height: 630px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.video-section {
-  width: 100%;
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 78vh;
+  position: relative;
 }
 
-.video-section h2 {
-  font-size: 33rem;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.video-section .scroll {
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clipped-video {
+  -webkit-clip-path: url(#text-overlay);
+  clip-path: url(#text-overlay);
+}
+
+header svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+text {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 35vw;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+header h2 {
+  position: absolute;
+  bottom: 50px;
   font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #022b3a;
 }
-
 /* === SECTION: CORPORATE === */
 .corporate {
   padding: 40px;
