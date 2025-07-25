@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -28,8 +35,8 @@
             alt="crustac logo"
           />
         </div>
-        <div class="menuBar">
-          <img src="images/menu.png" alt="menu" />
+        <div class="menuBar" id="menuIcon">
+          <img src="images/menu.png" alt="menu" id="menuToggleIcon" />
         </div>
       </nav>
 
@@ -41,7 +48,6 @@
               type="video/mp4"
             />
           </video>
-
           <svg width="100%" height="100%">
             <clipPath id="text-overlay">
               <text
@@ -55,9 +61,16 @@
             </clipPath>
           </svg>
         </div>
-
         <h2>SCROLL</h2>
       </section>
+
+      <div class="fullscreen-menu" id="menu">
+        <div class="close-btn" id="closeBtn">&#10005;</div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">News</a>
+      </div>
     </header>
     <section class="corporate">
       <div class="pageNo">
@@ -332,7 +345,45 @@
       <div class="layer2"></div>
     </div>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <img
+            src="https://crustac.fr/wp-content/themes/crustac/img/logo_light.svg"
+            alt="Crusta Logo"
+          />
+          <!-- Use your logo here -->
+        </div>
+
+        <!-- Address -->
+        <div class="footer-address">
+          <p>
+            ZI BUCONIS<br />
+            32600 L'ISLE JOURDAIN<br />
+            05 62 07 21 44
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links">
+          <a href="#">Site map</a>
+          <a href="#">Legal information</a>
+          <a href="#">Cookies</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 - Website made by SPKTR</p>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>

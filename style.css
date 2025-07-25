@@ -50,7 +50,44 @@ nav {
 nav .menuBar img {
   width: 40px;
 }
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.292);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  z-index: 1000;
+}
 
+.fullscreen-menu.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fullscreen-menu a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 15px 0;
+  color: #000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 40px;
+  right: 45px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: opacity 1s ease;
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -353,6 +390,65 @@ header h2 {
   font-size: 35px;
   color: #023646;
 }
+
+/* Footer section */
+.footer {
+  background-color: #003445;
+  padding: 40px 60px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.footer-logo img {
+  height: 25px;
+}
+
+.footer-address p {
+  margin: 0;
+  line-height: 12px;
+  font-size: 14px;
+  white-space: pre-line;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: white;
+}
+
+/* Swiper section ---------------- */
 .swiper {
   width: 100%;
   margin-top: 30px;
