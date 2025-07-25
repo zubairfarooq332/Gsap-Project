@@ -172,6 +172,15 @@ header h2 {
   height: 550px;
   border-radius: 50%;
 }
+.whiteCircle {
+  background-color: rgb(255, 255, 255);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  position: absolute;
+  top: 75px;
+  left: 75px;
+}
 .corporate-identity h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 300;
@@ -263,7 +272,6 @@ header h2 {
   background-size: cover;
   background-position: center;
 }
-
 /* Product section -------------------------------------------- */
 .product-ranges {
   width: 100vw;
@@ -498,6 +506,21 @@ header h2 {
   width: 100%;
   height: 50%;
   background-color: #c3dde4;
+}
+
+.svgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2624px;
+  z-index: -2;
+}
+svg {
+  height: 100%;
 }
 
 /* Responsive Breakpoints */

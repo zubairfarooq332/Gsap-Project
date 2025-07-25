@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <!-- Gsap cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
     <!-- Swiper CSS -->
     <link
@@ -61,7 +59,7 @@
             </clipPath>
           </svg>
         </div>
-        <h2>SCROLL</h2>
+        <h2 class="scroll">SCROLL</h2>
       </section>
 
       <div class="fullscreen-menu" id="menu">
@@ -84,6 +82,7 @@
             src="https://crustac.fr/wp-content/themes/crustac/img/home_o_waves.jpg.webp"
             alt=""
           />
+          <div class="whiteCircle"></div>
         </div>
         <div class="corporate-identity">
           <h4>Corporate identity</h4>
@@ -155,7 +154,6 @@
         <span class="active-page">07</span>
       </div>
       <div class="ExpertiseContent" id="expertise2">
-        <div class="expertise2-video"></div>
         <div class="expertise-content">
           <h4>Expertise</h4>
           <h2>Find out more about our production sites</h2>
@@ -166,6 +164,7 @@
           </p>
           <button class="btns">FIND OUT MORE</button>
         </div>
+        <div class="expertise2-video"></div>
       </div>
       <div class="next">NEXT</div>
     </section>
@@ -339,11 +338,11 @@
       <div class="next">NEXT</div>
     </div>
 
-    <!-- Contact section  -->
+    <!-- Contact section 
     <div class="contact">
       <div class="layer1"></div>
       <div class="layer2"></div>
-    </div>
+    </div> -->
 
     <footer class="footer">
       <div class="footer-container">
@@ -384,7 +383,25 @@
         <p>© 2025 - Website made by SPKTR</p>
       </div>
     </footer>
+    <div class="svgContainer">
+      <svg
+        width="766"
+        height="2624"
+        viewBox="0 0 766 2624"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        id="animatedLineSvg"
+      >
+        <path
+          d="M291.5 2C146.673 542.5 1400 643 312.4 1241C188.609 1309.06 -105.743 1428.75 49.1282 1697C204 1965.25 595.499 1877.05 593.5 2198.53C591.5 2520 269.356 2594.68 152.5 2624"
+          stroke="#FF0000"
+          stroke-width="10"
+        />
+      </svg>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
