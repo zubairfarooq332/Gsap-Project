@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url("../images/viktor-ritsvall-FWJinfDsIn8-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  z-index: 2;
+  width: 100%;
+  position: relative;
+}
+
+nav .menuBar img {
+  width: 40px;
+}
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.292);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  z-index: 1000;
+}
+
+.fullscreen-menu.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fullscreen-menu a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 15px 0;
+  color: #000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 40px;
+  right: 45px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: opacity 1s ease;
+}
+
+.news-circle {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.round-circle {
+  background-image: url("https://crustac.fr/wp-content/themes/crustac/img/home_o_waves.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.search-sectionmain {
+  height: 80px;
+  background-color: rgb(179, 218, 219);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0 40px;
+}
+.search-section {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+.selection-tab {
+  background-color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.185);
+}
+.searchbar {
+  display: flex;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.185);
+}
+.searchbar i {
+  font-size: 13px;
+}
+.searchbar input {
+  border: none;
+  outline: none;
+}
+select {
+  border: none;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 100%; /* default: 1 card per row */
+}
+/* Footer section */
+.footer {
+  background-color: #003445;
+  padding: 40px 60px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.footer-logo img {
+  height: 25px;
+}
+
+.footer-address p {
+  margin: 0;
+  line-height: 12px;
+  font-size: 14px;
+  white-space: pre-line;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: white;
+}
+@media (min-width: 768px) {
+  .card {
+    width: 47%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: 30%;
+  }
+}

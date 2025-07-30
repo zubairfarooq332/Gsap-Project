@@ -3,7 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/news.css" />
     <title>Crustac</title>
   </head>
-  <body></body>
+  <body>
+    <!-- News -->
+    <main class="news-section">
+      <header>
+        <nav>
+          <div class="language"><p>FR<span>&#124;</span>EN</p></div>
+          <div class="logo">
+            <img
+              src="https://crustac.fr/wp-content/themes/crustac/img/logo.svg"
+              alt="crustac logo"
+            />
+          </div>
+          <div class="menuBar" id="menuIcon">
+            <img src="images/menu.png" alt="menu" id="menuToggleIcon" />
+          </div>
+
+          <!-- Responsive section menu bar -->
+
+          <div class="fullscreen-menu" id="menu">
+            <div class="close-btn" id="closeBtn">&#10005;</div>
+            <a href="index.html">Home</a>
+            <a href="expertise.html">Our expertise</a>
+            <a href="contact.html">Contact</a>
+            <a href="news.html">News</a>
+          </div>
+        </nav>
+        <div class="news-circle">
+          <div class="round-circle"><h2>News</h2></div>
+        </div>
+        <section class="search-sectionmain">
+          <div class="search-section">
+            <div class="selection-tab">
+              <select name="fruits" id="fruit-select">
+                <option value="">All Categories</option>
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="orange">Orange</option>
+              </select>
+            </div>
+            <div class="search-tab">
+              <div class="searchbar">
+                <input type="text" / placeholder="search" ><span
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <div class="card-container">
+        <div class="card">
+          <h3>Card 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            temporibus.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Card 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            temporibus.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Card 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            temporibus.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Card 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            temporibus.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Card 5</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            temporibus.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Card 6</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            temporibus.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer section -->
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo -->
+          <div class="footer-logo">
+            <img
+              src="https://crustac.fr/wp-content/themes/crustac/img/logo_light.svg"
+              alt="Crusta Logo"
+            />
+            <!-- Use your logo here -->
+          </div>
+
+          <!-- Address -->
+          <div class="footer-address">
+            <p>
+              ZI BUCONIS<br />
+              32600 L'ISLE JOURDAIN<br />
+              05 62 07 21 44
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div class="footer-links">
+            <a href="#">Site map</a>
+            <a href="#">Legal information</a>
+            <a href="#">Cookies</a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 - Website made by SPKTR</p>
+        </div>
+      </footer>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

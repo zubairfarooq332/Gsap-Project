@@ -657,7 +657,7 @@ svg {
     background-size: cover;
     background-position: center;
   }
-
+  /* Footer section */
   .footer-container {
     flex-direction: column;
     align-items: center;
