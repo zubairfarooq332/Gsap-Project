@@ -133,11 +133,12 @@ select {
 }
 
 .card {
+  height: 100px;
   background-color: white;
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px;
-  width: 100%; /* default: 1 card per row */
+  width: 100%;
 }
 /* Footer section */
 .footer {
