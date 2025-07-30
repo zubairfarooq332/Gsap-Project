@@ -7,13 +7,11 @@ let menuOpen = false;
 
 menuIcon.addEventListener("click", () => {
   menu.classList.add("open");
-  menuToggleIcon.src = "images/close.png"; // cross icon
   menuOpen = true;
 });
 
 closeBtn.addEventListener("click", () => {
   menu.classList.remove("open");
-  menuToggleIcon.src = "images/menu.png"; // back to menu icon
   menuOpen = false;
 });
 

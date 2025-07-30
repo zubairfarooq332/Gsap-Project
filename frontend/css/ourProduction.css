@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  z-index: 2;
+  width: 100%;
+  position: relative;
+}
+
+nav .menuBar img {
+  width: 40px;
+}
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.292);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  z-index: 1000;
+}
+
+.fullscreen-menu.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fullscreen-menu a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 15px 0;
+  color: #000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 40px;
+  right: 45px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: opacity 1s ease;
+}
+
+.production-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 760px;
+  background-color: #e3f0f6;
+  padding: 60px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-content .subtitle {
+  color: #2a4c5c;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-content h2 {
+  color: #093344;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.text-content .description {
+  color: #093344;
+  font-size: 16px;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon-box .info-icon {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #093344;
+  border-radius: 50%;
+  color: #093344;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cta p {
+  margin-right: 20px;
+  color: #093344;
+  font-size: 14px;
+}
+
+.image-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-frame {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle, white 60%, transparent 60%),
+    url("https://design2seo.com/assets/blog/svg-clipping/home_intro_bg.jpg")
+      center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.france-map {
+  width: 220px;
+  height: 220px;
+  background-image: url("https://crustac.fr/assets/img/map.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Footer section ------------------------- */
+/* Footer section */
+.footer {
+  background-color: #003445;
+  padding: 40px 60px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.footer-logo img {
+  height: 25px;
+}
+
+.footer-address p {
+  margin: 0;
+  line-height: 12px;
+  font-size: 14px;
+  white-space: pre-line;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: white;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-content h2 {
+    font-size: 28px;
+  }
+
+  .circle-frame {
+    width: 280px;
+    height: 280px;
+  }
+
+  .france-map {
+    width: 160px;
+    height: 160px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-social {
+    gap: 40px;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-content h2 {
+    font-size: 22px;
+  }
+
+  .text-content .description {
+    font-size: 14px;
+  }
+
+  .circle-frame {
+    width: 220px;
+    height: 220px;
+  }
+
+  .france-map {
+    width: 140px;
+    height: 140px;
+  }
+}
