@@ -8,6 +8,10 @@
 body {
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 /* === GENERAL UTILITIES === */
 .pageNo {
@@ -22,21 +26,38 @@ body {
 .active-page {
   color: gray;
 }
+.next {
+  text-align: center;
+  padding: 30px 0px;
+}
+.next a {
+  text-decoration: none;
+}
+.next p {
+  color: black;
+}
 
 /* === HEADER SECTION === */
 header {
   display: flex;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
   background-image: url(https://design2seo.com/assets/blog/svg-clipping/home_intro_bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-
+.hero-section {
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -95,6 +116,17 @@ nav .menuBar img {
   justify-content: center;
   height: 78vh;
   position: relative;
+}
+.language p {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.scroll {
+  width: 100%;
+  text-align: center;
 }
 
 .wrapper {
@@ -210,10 +242,6 @@ header h2 {
   font-weight: 600;
   letter-spacing: 2px;
 }
-.next {
-  text-align: center;
-  padding: 30px 0px;
-}
 /* Expertise section ------------------------------------------------------------------------- */
 .Expertise {
   height: 765px;
@@ -284,7 +312,7 @@ header h2 {
 }
 .productContent {
   width: 80%;
-  height: 90vh;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,6 +537,7 @@ header h2 {
 }
 
 .svgContainer {
+  overflow-x: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -516,7 +545,7 @@ header h2 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 2624px;
+  height: 4000px;
   z-index: -2;
 }
 svg {
@@ -524,7 +553,24 @@ svg {
 }
 
 /* Responsive Breakpoints */
+@media (min-width: 1100px) {
+  .wrapper {
+    width: 350px;
+    height: 350px;
+  }
+  text {
+    font-size: 25vw;
+  }
+}
+@media (max-width: 1100px) {
+  .Expertise h2 {
+    font-size: 25px;
+  }
+}
 @media (max-width: 900px) {
+  .pageNo {
+    display: none;
+  }
   .next {
     display: none;
   }
@@ -538,19 +584,24 @@ svg {
     width: 280px;
     height: 280px;
   }
+  .whiteCircle {
+    height: 180px;
+    width: 180px;
+    top: 50px;
+    left: 50px;
+  }
   .section2-content {
     width: 90%;
     height: 600px;
   }
+
   .section2-content .corporate-identity {
     margin-top: 20px;
     width: 100%;
   }
   .section2-content .vector svg {
-    width: 150px;
-    position: absolute;
-    top: 100px;
-    right: 0;
+    padding-top: 30px;
+    width: 100px;
   }
   .corporate-identity h2 {
     font-size: 30px;
@@ -558,7 +609,14 @@ svg {
   .corporate-identity p {
     font-size: 14px;
   }
-
+  .Expertise {
+    border-bottom: 1px solid black;
+    height: 765px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .ExpertiseContent {
     flex-direction: column;
     align-items: flex-start;
@@ -593,9 +651,68 @@ svg {
     background-size: cover;
     background-position: center;
   }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-social {
+    gap: 40px;
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 768px) {
   .swiper-slide {
     height: auto;
+  }
+  .circle img {
+    width: 240px;
+    height: 240px;
+  }
+  .whiteCircle {
+    height: 160px;
+    width: 160px;
+    top: 40px;
+    left: 40px;
+  }
+  .ourProductheading {
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .productContent {
+    min-height: 800px;
+  }
+  .ourProductheading h4 {
+    font-size: 10px;
+  }
+  .ourProductheading h2 {
+    font-size: 30px;
+  }
+  .productBoxs {
+    flex-direction: column;
+    min-height: 550px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  text {
+    font-size: 40vw;
+  }
+  .section2-content .vector svg {
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: -50px;
+  }
+  .productBox img {
+    width: 27vw;
+  }
+  .ourProductheading {
+    align-items: flex-start;
+    padding-bottom: 10px;
   }
 }

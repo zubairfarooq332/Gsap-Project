@@ -20,57 +20,69 @@
     <!-- Crust website ---------------------->
 
     <header>
-      <div class="pageNo">
-        <span>01</span>
-        <span id="verticle-line">&#9135;</span>
-        <span class="active-page">07</span>
-      </div>
-      <nav>
-        <div class="language"><p>FR<span>&#124;</span>EN</p></div>
-        <div class="logo">
-          <img
-            src="https://crustac.fr/wp-content/themes/crustac/img/logo.svg"
-            alt="crustac logo"
-          />
+      <div class="hero-section">
+        <div class="pageNo">
+          <span>01</span>
+          <span id="verticle-line">&#9135;</span>
+          <span class="active-page">07</span>
         </div>
-        <div class="menuBar" id="menuIcon">
-          <img src="images/menu.png" alt="menu" id="menuToggleIcon" />
-        </div>
-      </nav>
-
-      <section class="hero">
-        <div class="wrapper">
-          <video class="clipped-video" muted autoplay loop>
-            <source
-              src="https://design2seo.com/assets/blog/svg-clipping/video_waves3.mp4"
-              type="video/mp4"
+        <!-- website Navbar ------------------->
+        <nav>
+          <div class="language"><p>FR<span>&#124;</span>EN</p></div>
+          <div class="logo">
+            <img
+              src="https://crustac.fr/wp-content/themes/crustac/img/logo.svg"
+              alt="crustac logo"
             />
-          </video>
-          <svg width="100%" height="100%">
-            <clipPath id="text-overlay">
-              <text
-                x="50%"
-                y="50%"
-                text-anchor="middle"
-                dominant-baseline="middle"
-              >
-                C
-              </text>
-            </clipPath>
-          </svg>
-        </div>
-        <h2 class="scroll">SCROLL</h2>
-      </section>
+          </div>
+          <div class="menuBar" id="menuIcon">
+            <img src="images/menu.png" alt="menu" id="menuToggleIcon" />
+          </div>
 
-      <div class="fullscreen-menu" id="menu">
-        <div class="close-btn" id="closeBtn">&#10005;</div>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">News</a>
+          <!-- Responsive section menu bar -->
+
+          <div class="fullscreen-menu" id="menu">
+            <div class="close-btn" id="closeBtn">&#10005;</div>
+            <a href="#">Home</a>
+            <a href="#">Our expertise</a>
+            <a href="#">Contact</a>
+            <a href="#">News</a>
+          </div>
+        </nav>
+
+        <!-- Centered Text Wrapper ----------->
+        <section class="hero">
+          <div class="wrapper">
+            <video class="clipped-video" muted autoplay loop>
+              <source
+                src="https://design2seo.com/assets/blog/svg-clipping/video_waves3.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <svg width="100%" height="100%">
+              <clipPath id="text-overlay">
+                <text
+                  x="50%"
+                  y="50%"
+                  text-anchor="middle"
+                  dominant-baseline="middle"
+                >
+                  C
+                </text>
+              </clipPath>
+            </svg>
+          </div>
+          <div class="scroll">
+            <a href="#Corporate-Section">
+              <h2 class="scroll">SCROLL</h2>
+            </a>
+          </div>
+        </section>
       </div>
     </header>
-    <section class="corporate">
+
+    <!-- Corporate section  ----------------->
+    <section class="corporate" id="Corporate-Section">
       <div class="pageNo">
         <span>02</span>
         <span id="verticle-line">&#9135;</span>
@@ -123,9 +135,11 @@
       </div>
     </section>
     <div class="next">
-      <p>NEXT</p>
+      <a href="#expertiseSection">
+        <p class="next-button">NEXT</p>
+      </a>
     </div>
-    <section class="Expertise">
+    <section class="Expertise" id="expertiseSection">
       <div class="pageNo">
         <span>03</span>
         <span id="verticle-line">&#9135;</span>
@@ -143,11 +157,15 @@
           <button class="btns">FIND OUT MORE</button>
         </div>
       </div>
-      <div class="next">NEXT</div>
+      <div class="next">
+        <a href="#expertise2-Section">
+          <p class="next-button">NEXT</p>
+        </a>
+      </div>
     </section>
 
     <!-- Expertise 2 -->
-    <section class="Expertise">
+    <section class="Expertise" id="expertise2-Section">
       <div class="pageNo">
         <span>04</span>
         <span id="verticle-line">&#9135;</span>
@@ -166,11 +184,15 @@
         </div>
         <div class="expertise2-video"></div>
       </div>
-      <div class="next">NEXT</div>
+      <div class="next">
+        <a href="#product-ranges-Section">
+          <p class="next-button">NEXT</p>
+        </a>
+      </div>
     </section>
 
     <!-- Our Product Ranges -->
-    <div class="product-ranges">
+    <div class="product-ranges" id="product-ranges-Section">
       <div class="pageNo">
         <span>04</span>
         <span id="verticle-line">&#9135;</span>
@@ -247,11 +269,15 @@
           <button>FIND OUT MORE</button>
         </div>
       </div>
-      <div class="next">NEXT</div>
+      <div class="next">
+        <a href="#news-section">
+          <p class="next-button">NEXT</p>
+        </a>
+      </div>
     </div>
 
     <!-- News Section -->
-    <div class="news">
+    <div class="news" id="news-section">
       <div class="pageNo">
         <span>04</span>
         <span id="verticle-line">&#9135;</span>
@@ -335,7 +361,6 @@
           </div>
         </div>
       </div>
-      <div class="next">NEXT</div>
     </div>
 
     <!-- Contact section 
@@ -383,22 +408,22 @@
         <p>© 2025 - Website made by SPKTR</p>
       </div>
     </footer>
-    <div class="svgContainer">
+    <!-- <div class="svgContainer">
       <svg
-        width="766"
-        height="2624"
-        viewBox="0 0 766 2624"
+        width="844"
+        height="4000"
+        viewBox="0 0 844 6471"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
         id="animatedLineSvg"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M291.5 2C146.673 542.5 1400 643 312.4 1241C188.609 1309.06 -105.743 1428.75 49.1282 1697C204 1965.25 595.499 1877.05 593.5 2198.53C591.5 2520 269.356 2594.68 152.5 2624"
+          d="M321.213 0C161.28 1333.93 1545.33 1581.96 344.292 3057.81C207.59 3225.79 -117.464 3521.18 53.561 4183.2C224.586 4845.22 656.919 4627.57 654.711 5420.95C652.503 6214.33 296.758 6398.63 167.714 6471"
           stroke="#FF0000"
           stroke-width="10"
         />
       </svg>
-    </div>
+    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
